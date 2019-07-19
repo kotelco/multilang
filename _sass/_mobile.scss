@@ -1,0 +1,29 @@
+/*===MobileCSS===*/
+.mobile_logo{
+  position: fixed;
+  top: 2rem;
+  right: 3rem;
+  width: 30%;
+
+}
+#mobile_nav{
+  font-size: 2.4rem;
+  width: 100vw;
+  ul {
+    padding: 1vh;
+    border: none;
+
+  }
+  li {
+    padding: .8vh;
+    list-style: disc;
+  }
+
+  #mobile_nav>li{
+    list-style: square;
+  }
+  .mobile_sub-menu{
+    font-size: 0.95em;
+  }
+
+}

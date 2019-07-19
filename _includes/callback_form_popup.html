@@ -1,0 +1,18 @@
+<div class="callback_form">
+    <form id="formaction_popup" class="callback_form" method="POST">
+        <input type="text" name="model" id="model" placeholder="Модель котла"  style="display: none;">
+        <input type="text" name="name" placeholder="Ваше имя"><br/>
+        <div class="form__field">
+            <input type="tel" name="phone" placeholder="Ваш номер телефона" required
+                  ><br/>
+            <span class="form__error">Это поле должно содержать телефон в формате +380671234567</span>
+        </div>
+        <input type="hidden" name="_next" value="/thanks">
+        <input type="text" name="_gotcha" style="display:none" />
+        <input type="submit" value="Перезвоните мне"/>
+    </form>
+    <script>
+        var contactform_popup =  document.getElementById('formaction_popup');
+        contactform_popup.setAttribute('action', '//formspree.io/' + 'kotelco' + '@' + 'ukr' + '.' + 'net');
+    </script>
+</div>

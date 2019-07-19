@@ -1,0 +1,22 @@
+---
+layout: default
+title: Статьи о дровяных,газовых и других котлах - блог завода "Проскуров"
+description: Добро пожаловать в блог Котел.Ко! Наши статьи помогут Вам выбрать котел для дома или дачи, помогут сэкономить средства на отоплении, познакомят с новейшими технологиями в мире отопительных котлов. Ждем Ваших отзывов и обсуждений!
+---
+
+<div class="blog_wrapper">
+
+    {% for article in site.articles %}
+    <a href="{{ article.url }}">
+        {% include date_ru.html date=article.date %}
+
+    </a>
+    <article class="blog_post">
+        <h3>{{ article.name }}</h3>
+        {{ article.content |truncatehtml | truncatewords: 150 | markdownify }}
+        <p  class="clear"><a href="{{ article.url }}"><i>Читать полностью</i></a></p>
+    </article>
+    <hr>
+    {% endfor %}
+
+</div>

@@ -1,0 +1,16 @@
+<a id="popup__toggle" onclick="return false;">
+    <div class="circlephone"></div>
+    <div class="circle-fill"></div>
+    <div class="img-circle">
+        <div class="img-circleblock"></div>
+    </div>
+</a>
+<!--[if lt IE 9]><div class="popup__overlay popup__overlay_ie"></div><![endif]-->
+<div id="popup__overlay">
+    <div class="popup">
+        <div id="popup__close" >X</div>
+        <p>Оставьте Ваш номер телефона.<br>Мы обязательно Вам перезвоним!</p>
+        {% include callback_form_popup.html %}
+    </div>
+    <script src="/js/callback_modal.js"></script>
+</div>

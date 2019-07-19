@@ -1,0 +1,18 @@
+---
+layout: default
+comments: true
+---
+<article class="post-on-post">
+  <h2>{{ page.title }}</h2>
+  <a href="\feedbacks">Все отзывы</a>
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  <div class="date">
+     Опубликовано <i>{% include date_ru.html date=page.date %}</i> ,  автор <i>{{ page.author }}</i>
+  </div>
+</article>
+<hr>
+{% include disqus.html %}
+<script id="dsq-count-scr" src="//kotelco.disqus.com/count.js" async></script>
